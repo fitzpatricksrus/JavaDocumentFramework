@@ -35,7 +35,6 @@ import java.io.Serializable;
  * @version $Version$
  */
 public class DocumentStorage implements Serializable {
-	//TODO hey {jf} - these should be final
 	/** called when the DocumentStorage object changes */
 	public final Notifier storageChanged = new Notifier();
 	/** called when the backing store changes */
@@ -125,8 +124,8 @@ public class DocumentStorage implements Serializable {
 			throws IOException, ClassNotFoundException {
 		//initialize the notifier
 		s.defaultReadObject();
-		storageChanged = new Notifier();
-		storageContentsChanged = new Notifier();
+		storageChanged.removeAllListeners();
+		storageContentsChanged.removeAllListeners();
 	}
 
 	public static class DocumentIOException extends IOException {
