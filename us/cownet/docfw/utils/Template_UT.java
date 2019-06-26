@@ -21,7 +21,6 @@ import java.text.DecimalFormat;
  * Template class for automated unit tests.  This provides some common
  * methods and a common structure for executing unit tests.
  *
- * @author jwebber
  * @version $Revision: /main/2 $
  */
 public abstract class Template_UT {

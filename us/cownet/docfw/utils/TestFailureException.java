@@ -20,7 +20,6 @@ package us.cownet.docfw.utils;
  * to indicate that a test case failed.
  * <p><strong>This class should not be used in product code.</strong>
  *
- * @author jwebber
  * @version $Revision: /main/2 $
  */
 public class TestFailureException extends Exception {
